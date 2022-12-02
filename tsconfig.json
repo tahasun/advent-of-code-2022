@@ -4,9 +4,9 @@
     "rootDir": ".",
     "outDir": "build"
   },
-  // "include": [
-  //   "src/**/*.ts",
-  //   "test/**/*.ts"
-  // ]
-  "files": ["./src/program.ts"]
+  "include": [
+    "src/**/*.ts",
+    "test/**/*.ts"
+  ]
+  // "files": ["./src/program.ts"]
 }

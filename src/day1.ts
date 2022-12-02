@@ -4,7 +4,7 @@ import { join } from 'path';
 export function processInput(filename: string): string[] {
     const result = readFileSync(join(__dirname, filename), 'utf-8');
     const calories = result.split(/\n/);
-    
+
     return calories;
 }
 
@@ -33,4 +33,13 @@ export function findMaxThreeSum(calories: string[]): number {
     
     return sorted[0]+sorted[1]+sorted[2];
 }
+
+const calories = processInput('./../input1.txt');
+
+const max = findMax(calories);
+console.log(max);
+
+const sorted = findMaxThreeSum(calories);
+console.log(sorted);
+
 

@@ -32,4 +32,9 @@ function findMaxThreeSum(calories) {
     return sorted[0] + sorted[1] + sorted[2];
 }
 exports.findMaxThreeSum = findMaxThreeSum;
+const calories = processInput('./../input1.txt');
+const max = findMax(calories);
+console.log(max);
+const sorted = findMaxThreeSum(calories);
+console.log(sorted);
 //# sourceMappingURL=day1.js.map
